@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="20.049">
+    <testcase classname="Application login" name="change password" time="12.681">
+        <failure message="Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.flush()&quot; because &quot;StepDefinition.commonFile.extent&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given Application is opened.................................................passed
+When username and password is provided......................................failed
+Then User is logged in......................................................skipped
+Given user is on change password page.......................................skipped
+When user gives a new password..............................................skipped
+Then User is able to change the password....................................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.flush()" because "StepDefinition.commonFile.extent" is null
+	at StepDefinition.commonFile.getDriver(commonFile.java:63)
+	at StepDefinition.TakeScreenshots.testBStackTakeScreenShot(TakeScreenshots.java:15)
+	at StepDefinition.stepDefinition.username_and_password_is_provided(stepDefinition.java:105)
+	at ✽.username and password is provided(file:///C:/Users/user/thirdmavenproject/src/test/java/features/all.feature:5)
+]]></failure>
+    </testcase>
+    <testcase classname="Application login" name="change the profile picture" time="2.321">
+        <system-out><![CDATA[Given Application is opened.................................................passed
+When username and password is provided......................................passed
+Then User is logged in......................................................passed
+Given user is on Account page...............................................passed
+When user selects an image..................................................passed
+Then User is able to change the profile picture.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Application login" name="Send a friend request" time="2.758">
+        <system-out><![CDATA[Given Application is opened.................................................passed
+When username and password is provided......................................passed
+Then User is logged in......................................................passed
+Given user is on profile page...............................................passed
+When user selects a name....................................................passed
+Then User is able to send a friend request..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Application login" name="Deactivate the account" time="1.771">
+        <system-out><![CDATA[Given Application is opened.................................................passed
+When username and password is provided......................................passed
+Then User is logged in......................................................passed
+Given user is on Account page...............................................passed
+When user clicks on deactivate button.......................................passed
+Then User is able to deactivate the account.................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
