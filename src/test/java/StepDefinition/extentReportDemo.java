@@ -28,6 +28,7 @@ public class extentReportDemo {
 		extent.attachReporter(reporter);
 		extent.setSystemInfo("Tester", "Rahul Shetty");
 
+		System.out.println("made changes");
 	}
 
 	@Test
