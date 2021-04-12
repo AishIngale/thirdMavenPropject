@@ -15,6 +15,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class commonFile {
+	
+	
 	protected static WebDriver driver;
 	public static Properties prop;
 	static ExtentReports extent;
@@ -26,6 +28,8 @@ public class commonFile {
 		
 		extent= new ExtentReports();
 		extent.attachReporter(reporter);
+		
+		System.out.println("made changes");
 	}
 	
 	protected static WebDriver getDriver(){
